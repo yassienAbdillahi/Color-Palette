@@ -1,10 +1,4 @@
-html, body {
-    box-sizing: border-box;
-  }
-  
-  
-  
-  .box1 {
+ .box1 {
     
     background: red;
     border-width: 2px;
@@ -48,4 +42,8 @@ html, body {
   .center {
     max-width: 60vw;
     margin: 0 auto;
+  }
+
+  button:focus {
+    outline: none;
   }

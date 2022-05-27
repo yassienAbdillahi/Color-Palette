@@ -10,27 +10,24 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/91aed24cf5.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <header>
-    <h1  class="center">Colours</h1>
-  </header>
-
-  <main>
-    <p>Click each box to randomly generate a color</p>
-    <div class="grid">
-      <div class="box1 column" onclick="generateAndSetRandomColorForBox1()">
-        <p id="color1HexCode">#FF0000</p>
-      </div>
-      <div class="box2 column" onclick="generateAndSetRandomColorForBox2()">
-        <p id="color2HexCode">#00FF00</p>
-      </div>
-      <div class="box3 column" onclick="generateAndSetRandomColorForBox3()">
-        <p id="color3HexCode">#0000FF</p>
-      </div>
-   </div>
-  </main>
-
-    
+<body id="body">
+    <header>
+      <h1  class="center">Colours</h1>
+    </header>
+    <main>
+      <p class="center">Click each box to randomly generate a color or press any key to generate three colors at once.</p>
+      <div class="grid">
+        <button type="button" id="box1Button" class="box1 column">
+          <p id="color1HexCode">#FF0000</p>
+        </button>
+        <button type="button" id="box2Button" class="box2 column">
+          <p id="color2HexCode">#00FF00</p>
+        </button>
+        <button type="button" id="box3Button" class="box3 column" onclick="generateAndSetRandomColorForBox3()">
+          <p id="color3HexCode">#0000FF</p>
+        </button>
+     </div>
+   </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

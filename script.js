@@ -31,3 +31,12 @@ function generateAndSetRandomColorForBox1 () {
     document.getElementsByClassName("box3")[0].style.borderColor = newHex;
   }
   
+  
+  document.getElementById("box1Button").addEventListener("click", generateAndSetRandomColorForBox1);
+  document.getElementById("box2Button").addEventListener("click", generateAndSetRandomColorForBox2);
+  document.getElementById("box3Button").addEventListener("click", generateAndSetRandomColorForBox3);
+  
+  
+  document.getElementById("body").addEventListener("keydown", generateAndSetRandomColorForBox1);
+  document.getElementById("body").addEventListener("keydown", generateAndSetRandomColorForBox2);
+  document.getElementById("body").addEventListener("keydown", generateAndSetRandomColorForBox3);
