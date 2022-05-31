@@ -6,7 +6,7 @@ This is a simple colour palette picker similar to [Coolors](https://coolors.co/g
 
 - [x] Built with HTML, CSS & JS
 - [x] Code hosted on GitHub
-- [x] Deployed to [GitHub Pages]()
+- [x] Deployed to [GitHub Pages](https://yassienabdillahi.github.io/Color-Palette/)
 - [x] Auto-generate multiple colours
 - [x] Allow users to change each colour
 
