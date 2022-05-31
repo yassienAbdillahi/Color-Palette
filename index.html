@@ -7,15 +7,16 @@
     <meta name="description" content="Colour Palette Generator">
     <meta name="keywords" content="Colour Palette"> 
     <meta name="author" content="Yassien Abdillahi">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://kit.fontawesome.com/91aed24cf5.js" crossorigin="anonymous"></script>
 </head>
 <body id="body">
-    <header>
-      <h1  class="center">Colours</h1>
+    <header class="center">
+      <h1>C<span class="orange-text">o</span><span class="yellow-text">l</span><span class="green-text">o</span><span class="blue-text">u</span><span class="indigo-text">r</span><span class="violet-text">s</span>
+      </h1>
     </header>
     <main>
-      <p class="center">Click each box to randomly generate a color or press any key to generate three colors at once.</p>
+      <p class="left">Click each box to randomly generate a colour or press any key to generate three colours at once.</p><br><br>
       <div class="grid">
         <button type="button" id="box1Button" class="box1 column">
           <p id="color1HexCode">#FF0000</p>
@@ -23,7 +24,7 @@
         <button type="button" id="box2Button" class="box2 column">
           <p id="color2HexCode">#00FF00</p>
         </button>
-        <button type="button" id="box3Button" class="box3 column" onclick="generateAndSetRandomColorForBox3()">
+        <button type="button" id="box3Button" class="box3 column">
           <p id="color3HexCode">#0000FF</p>
         </button>
      </div>

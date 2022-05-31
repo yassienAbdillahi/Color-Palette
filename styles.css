@@ -1,29 +1,27 @@
  .box1 {
     
     background: red;
-    border-width: 2px;
+    border-width: 0.1rem;
     border-style: solid;
     border-color: red;
-    border-radius: 12px;
+    border-radius: 0.75rem;
   }
   
   .box2 {
     
     background: green;
-    border-width: 2px;
+    border-width: 0.1rem;
     border-style: solid;
     border-color: green;
-    border-radius: 12px;
+    border-radius: 0.75rem;
   }
   
   .box3 {
-    
-    height: 50rem;
     background: blue;
-    border-width: 2px;
+    border-width: 0.1rem;
     border-style: solid;
     border-color: blue;
-    border-radius: 12px;
+    border-radius: 0.75rem;
   }
   
   .column {
@@ -35,15 +33,44 @@
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
     gap: 1rem;
   }
   
   .center {
-    max-width: 60vw;
+    max-width: 10vw;
     margin: 0 auto;
+  }
+
+  .left {
+    max-width: 90vw;
+    margin: 0 0 0 1rem;
   }
 
   button:focus {
     outline: none;
+  }
+
+  h1::first-letter {
+    color: red;
+  }
+
+  .orange-text {
+    color: orange;
+  }
+
+  .yellow-text {
+    color: yellow;
+  }
+
+  .green-text {
+    color: green;
+  }
+
+  .indigo-text {
+    color: indigo;
+  }
+
+  .violet-text {
+    color: violet;
   }
