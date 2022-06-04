@@ -34,7 +34,7 @@
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1rem;
   }
   
@@ -119,4 +119,48 @@
 
   .revealed {
     display: block !important; 
+  }
+
+  .box7 {
+    
+    background: red;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 0.75rem;
+  }
+  
+  .box8 {
+    
+    background: green;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.75rem;
+  }
+  
+  .box9 {
+    background: blue;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 0.75rem;
+  }
+
+  .box10 {
+    
+    background: red;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 0.75rem;
+  }
+  
+  .box11 {
+    
+    background: green;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.75rem;
   }

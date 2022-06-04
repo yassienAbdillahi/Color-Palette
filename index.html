@@ -16,7 +16,9 @@
       </h1>
     </header>
     <main>
-      <p class="left">Click each box to randomly generate a colour or press any key to generate three colours at once or hover over each box to generate three related colours.</p><br><br>
+      <p class="left">Click each box in the first row to randomly generate a colour or press any key to generate three colours at once <b>OR</b> click the first box in the second row to generate three related colours (in ascending lightness).
+        <b>OR</b> click the first box in the third row to generate three related colours (in descending lightness).
+        <b>OR</b> click the first box in the fourth row to generate two complimentary colours.</p><br><br>
       <div class="grid">
         <button type="button" id="box1Button" class="box1 column">
           <p id="color1HexCode">hsl(0, 100% 50%)</p>
@@ -28,15 +30,35 @@
           <p id="color3HexCode">hsl(240, 100% 50%)</p>
         </button>
 
-           <button type="button" id="box4Button" class="box4 column hidden">
+           <button type="button" id="box4Button" class="box4 column">
              <p id="color4HexCode">hsl(0, 100% 50%)</p>
            </button>
-           <button type="button" id="box5Button" class="box5 column hidden">
+           <button type="button" id="box5Button" class="box5 column">
              <p id="color5HexCode">hsl(120, 100% 50%</p>
            </button>
-           <button type="button" id="box6Button" class="box6 column hidden">
+           <button type="button" id="box6Button" class="box6 column">
             <p id="color6HexCode">hsl(240, 100% 50%)</p>
           </button>
+
+          <button type="button" id="box7Button" class="box7 column">
+            <p id="color7HexCode">hsl(0, 100% 50%)</p>
+          </button>
+          <button type="button" id="box8Button" class="box8 column">
+            <p id="color8HexCode">hsl(120, 100% 50%</p>
+          </button>
+          <button type="button" id="box9Button" class="box9 column">
+           <p id="color9HexCode">hsl(240, 100% 50%)</p>
+         </button>
+
+         <button type="button" id="box10Button" class="box10 column">
+          <p id="color10HexCode">hsl(0, 100% 50%)</p>
+        </button>
+        <button type="button" id="box11Button" class="box11 column">
+          <p id="color11HexCode">hsl(120, 100% 50%</p>
+        </button>
+
+
+
       </div>
    </main>
     <script src="script.js"></script>

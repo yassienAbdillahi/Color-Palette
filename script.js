@@ -81,13 +81,12 @@ function generateAndSetRandomColorForBox1 () {
   document.getElementById("body").addEventListener("keydown", generateAndSetRandomColorForBox1);
   document.getElementById("body").addEventListener("keydown", generateAndSetRandomColorForBox2);
   document.getElementById("body").addEventListener("keydown", generateAndSetRandomColorForBox3);
-/*
-  function generateRelatedToBox1 () {
-    let a = document.getElementById("color1HexCode").innerHTML;
-    let b = a[4] + a[5] + a[6];
-    let newHSL4 = 'hsl(' + b + ', 100%, 62.5%)';
-    let newHSL5 = 'hsl(' + b + ', 100%, 75%)';
-    let newHSL6 = 'hsl(' + b + ', 100%, 87.5%)';
+
+  function generateRelated1 () {
+    let a = Math.floor(Math.random() * 361);
+    let newHSL4 = 'hsl(' + a + ', 100%, 62.5%)';
+    let newHSL5 = 'hsl(' + a + ', 100%, 75%)';
+    let newHSL6 = 'hsl(' + a + ', 100%, 87.5%)';
 
     document.getElementById("color4HexCode").innerHTML = newHSL4;
     document.getElementsByClassName("box4")[0].style.background = newHSL4;
@@ -101,10 +100,58 @@ function generateAndSetRandomColorForBox1 () {
     document.getElementsByClassName("box6")[0].style.background = newHSL6;
     document.getElementsByClassName("box6")[0].style.borderColor = newHSL6;
 
-    document.getElementById("color4HexCode").style.display = "block";
-    document.getElementById("color5HexCode").style.display = "block";
-    document.getElementById("color6HexCode").style.display = "block";
+    
   }
 
-  document.getElementById("box1Button").addEventListener("dblclick", generateRelatedToBox1);
-  */
+  document.getElementById("box4Button").addEventListener("click", generateRelated1);
+
+
+  function generateRelated2 () {
+    let a = Math.floor(Math.random() * 361);
+    let newHSL4 = 'hsl(' + a + ', 100%, 37.5%)';
+    let newHSL5 = 'hsl(' + a + ', 100%, 25%)';
+    let newHSL6 = 'hsl(' + a + ', 100%, 12.5%)';
+
+    document.getElementById("color7HexCode").innerHTML = newHSL4;
+    document.getElementsByClassName("box7")[0].style.background = newHSL4;
+    document.getElementsByClassName("box7")[0].style.borderColor = newHSL4;
+
+    document.getElementById("color8HexCode").innerHTML = newHSL5;
+    document.getElementsByClassName("box8")[0].style.background = newHSL5;
+    document.getElementsByClassName("box8")[0].style.borderColor = newHSL5;
+
+    document.getElementById("color9HexCode").innerHTML = newHSL6;
+    document.getElementsByClassName("box9")[0].style.background = newHSL6;
+    document.getElementsByClassName("box9")[0].style.borderColor = newHSL6;
+
+   
+  }
+
+  document.getElementById("box7Button").addEventListener("click", generateRelated2);
+
+
+  function generateComplimentary () {
+    let a = Math.floor(Math.random() * 361);
+    let newHSL4 = 'hsl(' + a + ', 100%, 50%)';
+    let b = a + 180;
+    let c = a - 180;
+    let newHSL5 = 'hsl(' + b + ', 100%, 50%)';
+    let newHSL6 = 'hsl(' + c + ', 100%, 50%)';
+
+    document.getElementById("color10HexCode").innerHTML = newHSL4;
+    document.getElementsByClassName("box10")[0].style.background = newHSL4;
+    document.getElementsByClassName("box10")[0].style.borderColor = newHSL4;
+
+    if (a > 180) {
+      document.getElementById("color11HexCode").innerHTML = newHSL6;
+    document.getElementsByClassName("box11")[0].style.background = newHSL6;
+    document.getElementsByClassName("box11")[0].style.borderColor = newHSL6;
+    }
+    else {
+      document.getElementById("color11HexCode").innerHTML = newHSL5;
+    document.getElementsByClassName("box11")[0].style.background = newHSL5;
+    document.getElementsByClassName("box11")[0].style.borderColor = newHSL5;
+    }
+  }
+
+  document.getElementById("box10Button").addEventListener("click", generateComplimentary);
