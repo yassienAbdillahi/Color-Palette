@@ -33,7 +33,8 @@
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
   }
   
@@ -73,4 +74,49 @@
 
   .violet-text {
     color: violet;
+  }
+
+  .box4 {
+    
+    background: red;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 0.75rem;
+  }
+  
+  .box5 {
+    
+    background: green;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.75rem;
+  }
+  
+  .box6 {
+    background: blue;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 0.75rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .stack > * + * {
+    margin-top: 2rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .revealed {
+    display: block !important; 
   }
