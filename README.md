@@ -13,5 +13,5 @@ This is a simple colour palette picker similar to [Coolors](https://coolors.co/g
 #### Optional Features
 
 - [ ] Export colour palette in different formats (e.g. JSON, CSS variables)
-- [ ] Generate related colours rather than random (e.g. ascending lightness, complementary hues etc)
+- [x] Generate related colours rather than random (e.g. ascending lightness, complementary hues etc)
 - [ ] Save palettes to localStorage
