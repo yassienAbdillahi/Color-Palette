@@ -16,46 +16,172 @@
       </h1>
     </header>
     <main>
-      <p class="left">Click each box in the first row to randomly generate a colour or press any key to generate three colours at once <b>OR</b> click the first box in the second row to generate three related colours (in ascending lightness).
-        <b>OR</b> click the first box in the third row to generate three related colours (in descending lightness).
-        <b>OR</b> click the first box in the fourth row to generate two complimentary colours.</p><br><br>
-      <div class="grid">
-        <button type="button" id="box1Button" class="box1 column">
-          <p id="color1HexCode">hsl(0, 100% 50%)</p>
-        </button>
-        <button type="button" id="box2Button" class="box2 column">
-          <p id="color2HexCode">hsl(120, 100% 50%)</p>
-        </button>
-        <button type="button" id="box3Button" class="box3 column">
-          <p id="color3HexCode">hsl(240, 100% 50%)</p>
-        </button>
+      <p class="left">Click: 
+        <ul>
+          <li>each box in the first row to randomly generate a colour 
+            or press any key to generate three colours at once (in the first row)
+          </li>
+          <li>the first box in the second row to generate three related colours 
+            in ascending lightness</li>
+          <li>the first box in the third row to generate three related colours
+             in descending lightness</li>
+          <li>the first box in the fourth row to generate two complimentary colours</li>
+          <li>the first box in the fifth row to generate three analogous colours</li>  
+          <li>the first box in the sixth row to generate three triadic colours</li>
+          <li>the first box in the seventh row to generate four tetradic colours</li>
+        </ul> 
+      </p><br><br>
 
-           <button type="button" id="box4Button" class="box4 column">
-             <p id="color4HexCode">hsl(0, 100% 50%)</p>
+        </ul>
+      <div class="stack">
+
+        <section id="randomColours" class="stack-sm">
+          <h2 class="center">Random</h2>
+          <div class="grid1">
+            <button type="button" id="box1Button" class="box1 column">
+              <p id="color1HexCode">hsl(0, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box2Button" class="box2 column">
+              <p id="color2HexCode">hsl(120, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box3Button" class="box3 column">
+              <p id="color3HexCode">hsl(240, 100% 50%)</p>
+            </button>
+          </div>
+        </section>
+
+        <section id="ascendingLightness" class="stack-sm">
+          <h2 class="center">Ascending</h2>
+          <div class="grid1">
+            <button type="button" id="box4Button" class="box4 column">
+              <p id="color4HexCode">hsl(0, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box5Button" class="box5 column">
+              <p id="color5HexCode">hsl(120, 100% 50%</p>
+            </button>
+
+            <button type="button" id="box6Button" class="box6 column">
+             <p id="color6HexCode">hsl(240, 100% 50%)</p>
            </button>
-           <button type="button" id="box5Button" class="box5 column">
-             <p id="color5HexCode">hsl(120, 100% 50%</p>
+          </div>
+        </section>
+
+        <section id="descendingLightness" class="stack-sm">
+          <h2 class="center">Descending</h2>
+          <div class="grid1">
+            <button type="button" id="box7Button" class="box7 column">
+              <p id="color7HexCode">hsl(0, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box8Button" class="box8 column">
+              <p id="color8HexCode">hsl(120, 100% 50%</p>
+            </button>
+
+            <button type="button" id="box9Button" class="box9 column">
+             <p id="color9HexCode">hsl(240, 100% 50%)</p>
            </button>
-           <button type="button" id="box6Button" class="box6 column">
-            <p id="color6HexCode">hsl(240, 100% 50%)</p>
+          </div>
+        </section>
+
+        <section id="complimentary" class="stack-sm">
+          <h2 class="center">Complimentary</h2>
+          <p class="left">Two colors that are on opposite sides of the color wheel. This combination 
+            provides a high contrast and high impact color combination – together, these
+             colors will appear brighter and more prominent.
+          </p>
+          <div class="grid2">
+            <button type="button" id="box10Button" class="box10 column">
+              <p id="color10HexCode">hsl(0, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box11Button" class="box11 column">
+              <p id="color11HexCode">hsl(120, 100% 50%</p>
+            </button>
+          </div>
+        </section>
+
+        <section id="analogous" class="stack-sm">
+          <h2 class="center">Analogous</h2>
+          <p class="left">Three colors that are side by side on the color wheel. This color 
+            combination is versatile, but can be overwhelming. To balance an 
+            analogous color scheme, choose one dominant color, and use the others as accents.</p>
+          <div class="grid1">
+            <button type="button" id="box12Button" class="box12 column">
+              <p id="color12HexCode">hsl(0, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box13Button" class="box13 column">
+              <p id="color13HexCode">hsl(120, 100% 50%</p>
+            </button>
+
+            <button type="button" id="box14Button" class="box14 column">
+             <p id="color14HexCode">hsl(240, 100% 50%)</p>
+           </button>
+          </div>
+        </section>
+
+        <section id="triadic" class="stack-sm">
+          <h2 class="center">Triadic</h2>
+          <p class="left">Three colors that are evenly spaced on the color wheel. 
+            This provides a high contrast color scheme, but less so than the 
+            complementary color combination — making it more versatile. This 
+            combination creates bold, vibrant color palettes.</p>
+          <div class="grid1">
+            <button type="button" id="box15Button" class="box15 column">
+              <p id="color15HexCode">hsl(0, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box16Button" class="box16 column">
+              <p id="color16HexCode">hsl(120, 100% 50%</p>
+            </button>
+
+            <button type="button" id="box17Button" class="box17 column">
+             <p id="color17HexCode">hsl(240, 100% 50%)</p>
+           </button>
+          </div>
+        </section>
+
+        <section id="tetradic" class="stack-sm">
+          <h2 class="center">Tetradic</h2>
+          <p class="left">Four colors that are evenly spaced on the color wheel. 
+            Tetradic color schemes are bold and work best if you let one color be 
+            dominant, and use the others as accents. The more colors you have in 
+            your palette, the more difficult it is to balance.</p>
+          <div class="grid3">
+            <button type="button" id="box18Button" class="box18 column">
+              <p id="color18HexCode">hsl(0, 100% 50%)</p>
+            </button>
+
+            <button type="button" id="box19Button" class="box19 column">
+              <p id="color19HexCode">hsl(120, 100% 50%</p>
+            </button>
+
+            <button type="button" id="box20Button" class="box20 column">
+             <p id="color20HexCode">hsl(240, 100% 50%)</p>
+           </button>
+
+           <button type="button" id="box21Button" class="box21 column">
+            <p id="color21HexCode">hsl(240, 100% 50%)</p>
           </button>
 
-          <button type="button" id="box7Button" class="box7 column">
-            <p id="color7HexCode">hsl(0, 100% 50%)</p>
-          </button>
-          <button type="button" id="box8Button" class="box8 column">
-            <p id="color8HexCode">hsl(120, 100% 50%</p>
-          </button>
-          <button type="button" id="box9Button" class="box9 column">
-           <p id="color9HexCode">hsl(240, 100% 50%)</p>
-         </button>
+          </div>
+        </section>
 
-         <button type="button" id="box10Button" class="box10 column">
-          <p id="color10HexCode">hsl(0, 100% 50%)</p>
-        </button>
-        <button type="button" id="box11Button" class="box11 column">
-          <p id="color11HexCode">hsl(120, 100% 50%</p>
-        </button>
+
+
+
+
+        
+        
+
+           
+
+          
+
+      
 
 
 

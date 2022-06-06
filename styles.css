@@ -44,7 +44,7 @@
   }
 
   .left {
-    max-width: 90vw;
+    max-width: 85vw;
     margin: 0 0 0 1rem;
   }
 
@@ -110,7 +110,11 @@
   }
 
   .stack > * + * {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .stack-sm > * + * {
+    margin-top: 0.5rem;
   }
 
   .hidden {
@@ -162,5 +166,113 @@
     border-width: 0.1rem;
     border-style: solid;
     border-color: green;
+    border-radius: 0.75rem;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+
+  .box12 {
+    
+    background: red;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 0.75rem;
+  }
+  
+  .box13 {
+    
+    background: green;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.75rem;
+  }
+  
+  .box14 {
+    background: blue;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 0.75rem;
+  }
+
+  .box15 {
+    
+    background: red;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 0.75rem;
+  }
+  
+  .box16 {
+    
+    background: green;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.75rem;
+  }
+  
+  .box17 {
+    background: blue;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 0.75rem;
+  }
+
+
+  .box18 {
+    
+    background: red;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 0.75rem;
+  }
+  
+  .box19 {
+    
+    background: green;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.75rem;
+  }
+  
+  .box20 {
+    background: blue;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 0.75rem;
+  }
+
+  .box21 {
+    background: blue;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: blue;
     border-radius: 0.75rem;
   }
