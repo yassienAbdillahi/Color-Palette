@@ -276,3 +276,26 @@
     border-color: blue;
     border-radius: 0.75rem;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
